@@ -1,11 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { TextInput } from "react-native";
+import { global } from "./src/styles/global";
 
-import { global } from './assets/styles/global';
+import Container from "./src/components/Container";
+import Form from "./src/components/Form";
 
 export default function App() {
   return (
-    <View style={global.container}>
-    </View>
+    <Container>
+      <Form title="CONECTE-SE" >
+        <TextInput keyboardType="email-address" style={global.input}></TextInput>
+        <TextInput secureTextEntry={true} style={global.input}></TextInput>
+      </Form>
+    </Container>
   );
 }
