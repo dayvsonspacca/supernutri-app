@@ -1,4 +1,5 @@
 type FormProps = {
     title: String,
-    children?: React.ReactNode
+    children?: React.ReactNode,
+    size?: String
 }

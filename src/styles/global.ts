@@ -12,22 +12,40 @@ export const global = StyleSheet.create({
         backgroundColor: theme.colors.primary,
         borderRadius: 10,
         width: '90%',
-        height: '60%',
+        height: '70%',
         alignItems: "center",
     },
     title: {
-        fontSize: 24,
+        fontSize: theme.font.mdl,
         fontWeight: "bold",
-        marginTop: 25
+        marginVertical: 30
     },
     input: {
         backgroundColor: '#fff',
-        width: '90%',
         height: 40,
         margin: 10
     },
     inputContainer: {
-        width: '100%',
+        width: '95%',
+    },
+    label: {
+        fontSize: theme.font.sm,
+        marginHorizontal: 10,
+    },
+    line: {
+        height: 3,
+        width: '90%',
+        backgroundColor: 'black',
+        borderRadius: 10,
+        marginVertical: 10,
+    },
+    btn: {
+        marginVertical: 10,
+        width: '70%',
+        height: 60,
+        backgroundColor: '#fff',
+        borderRadius: 10,
+        justifyContent: "center",
         alignItems: 'center',
     }
 });
