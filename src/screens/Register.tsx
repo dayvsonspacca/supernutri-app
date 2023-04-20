@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/AntDesign';
 import Form from "../components/Form";
 import Container from "../components/Container";
 
-import { global } from "../styles/global";
+import global from "../styles/global";
 import theme from "../styles/theme";
 import form from "../styles/form";
 
@@ -14,21 +14,21 @@ export default function App() {
     <Container>
       <Form title="CADASTRO">
 
-        <View style={global.inputContainer}>
+        <View style={form.inputContainer}>
           <Text style={global.label}>Nome</Text>
-          <TextInput keyboardType="default" style={global.input}></TextInput>
+          <TextInput keyboardType="default" style={form.input}></TextInput>
         </View>
-        <View style={global.inputContainer}>
+        <View style={form.inputContainer}>
           <Text style={global.label}>Senha</Text>
-          <TextInput secureTextEntry={true} style={global.input}></TextInput>
+          <TextInput secureTextEntry={true} style={form.input}></TextInput>
         </View>
-        <View style={global.inputContainer}>
+        <View style={form.inputContainer}>
           <Text style={global.label}>Confirmar senha</Text>
-          <TextInput keyboardType="email-address" style={global.input}></TextInput>
+          <TextInput keyboardType="email-address" style={form.input}></TextInput>
         </View>
-        <View style={global.inputContainer}>
+        <View style={form.inputContainer}>
           <Text style={global.label}>E-mail</Text>
-          <TextInput secureTextEntry={true} style={global.input}></TextInput>
+          <TextInput secureTextEntry={true} style={form.input}></TextInput>
         </View>
 
         <TouchableOpacity style={global.btn}>

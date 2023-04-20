@@ -7,20 +7,20 @@ import Form from "../components/Form";
 
 import theme from "../styles/theme";
 import form from "../styles/form";
-import { global } from "../styles/global";
+import global from "../styles/global";
 
 export default function Login() {
   return (
     <Container>
       <Form title="CONECTE-SE">
 
-      <View style={global.inputContainer}>
+      <View style={form.inputContainer}>
           <Text style={global.label}>E-mail</Text>
-          <TextInput keyboardType="email-address" style={global.input}></TextInput>
+          <TextInput keyboardType="email-address" style={form.input}></TextInput>
       </View>
-      <View style={global.inputContainer}>
+      <View style={form.inputContainer}>
           <Text style={global.label}>Senha</Text>
-          <TextInput secureTextEntry={true} style={global.input}></TextInput>
+          <TextInput secureTextEntry={true} style={form.input}></TextInput>
       </View>
 
       <View style={global.line}></View>

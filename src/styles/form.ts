@@ -16,6 +16,21 @@ const form = StyleSheet.create({
         alignItems: 'center',
         borderRadius: 10
     },
+    input: {
+        backgroundColor: '#fff',
+        height: 40,
+        margin: 10
+    },
+    inputContainer: {
+        width: '95%',
+    },
+    formContainer: {
+        backgroundColor: theme.colors.primary,
+        borderRadius: 10,
+        width: '90%',
+        height: '70%',
+        alignItems: "center",
+    },
     link: {
         color: 'blue',
         fontSize: theme.font.smd

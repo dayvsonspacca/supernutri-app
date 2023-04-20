@@ -7,7 +7,7 @@ import Form from "../components/Form";
 
 import theme from "../styles/theme";
 import form from "../styles/form";
-import { global } from "../styles/global";
+import global from "../styles/global";
 
 export default function ForgotPassword() {
   return (
@@ -18,9 +18,9 @@ export default function ForgotPassword() {
 
         <View style={global.line}></View>
 
-        <View style={global.inputContainer}>
+        <View style={form.inputContainer}>
           <Text style={global.label}>E-mail</Text>
-          <TextInput secureTextEntry={true} style={global.input}></TextInput>
+          <TextInput secureTextEntry={true} style={form.input}></TextInput>
         </View>
 
         <View style={global.line}></View>
