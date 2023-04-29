@@ -33,7 +33,7 @@ const form = StyleSheet.create({
     },
     link: {
         color: 'blue',
-        fontSize: theme.font.smd
+        fontSize: theme.font.smd,
     }
 });
 

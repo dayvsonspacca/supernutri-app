@@ -1,6 +1,6 @@
 import { View } from "react-native";
 
-import { global } from "../styles/global";
+import global from "../styles/global";
 
 export default function Container (props:any ){
 

@@ -4,7 +4,6 @@ import theme from "./theme";
 const global = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: theme.colors.secondary,
         alignItems: "center",
         justifyContent: "center"
     },
@@ -32,6 +31,13 @@ const global = StyleSheet.create({
         borderRadius: 10,
         justifyContent: "center",
         alignItems: 'center',
+    },
+    content: {
+        backgroundColor: theme.colors.primary,
+        alignItems: 'center',
+        width: '90%',
+        height: '100%',
+        borderRadius: 25
     }
 });
 
