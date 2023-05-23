@@ -1,6 +1,4 @@
 import { View, ImageBackground, TouchableOpacity, Text, TextInput, Image } from 'react-native'
-import Icon from 'react-native-vector-icons/AntDesign';
-
 
 import Container from '../components/Container';
 import Form from '../components/Form';

@@ -1,14 +1,25 @@
-type FormProps = {
+interface FormProps {
     title?: String,
     children?: React.ReactNode,
     size?: String
 }
 
-type HeaderProps = {
+interface HeaderProps {
     title: String
 }
 
 interface CriancaProps {
     nome: String,
     img: String
+}
+
+interface JogoProps {
+    nome: String,
+    bloqueado: Boolean,
+}
+
+interface NutrinhoProps {
+    nome: String,
+    desc: String,
+    image: String
 }

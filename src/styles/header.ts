@@ -14,7 +14,8 @@ const header = StyleSheet.create({
     title: {
         fontSize: theme.font.md,
         fontWeight: "bold",
-        marginBottom: 20
+        marginBottom: 20,
+        textAlign: 'center'
     },
 });
 

@@ -34,9 +34,7 @@ const global = StyleSheet.create({
     },
     content: {
         backgroundColor: theme.colors.primary,
-        alignItems: 'center',
         width: '90%',
-        height: '100%',
         borderRadius: 25
     }
 });

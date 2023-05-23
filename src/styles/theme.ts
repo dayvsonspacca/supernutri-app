@@ -4,6 +4,7 @@ const theme = {
         secondary: '#F8CDC0',
     },
     font: {
+        xs: 12,
         sm: 16,
         smd: 20,
         md: 24,

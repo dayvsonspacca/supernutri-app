@@ -44,6 +44,15 @@ const crianca = StyleSheet.create({
         justifyContent:'center',
         alignItems: 'center',
         flex: 1,
+    },
+    btn: {
+        backgroundColor: theme.colors.secondary,
+        width: '90%',
+        height: 70,
+        borderRadius: 25,
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: 20
     }
 });
 

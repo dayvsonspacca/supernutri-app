@@ -15,7 +15,7 @@ export default function Crianca ( props:CriancaProps ){
                 </View>
                 <View style={crianca.optContainer}>
                     <TouchableOpacity style={crianca.opt}><Image source={require('../assets/images/indicadores.png')}/></TouchableOpacity>
-                    <TouchableOpacity style={crianca.opt}><Image source={require('../assets/images/jogos.png')}/></TouchableOpacity>
+                    <TouchableOpacity style={crianca.opt}><Image source={require('../assets/images/joystick.png')}/></TouchableOpacity>
                 </View>
             </View>
         </View>
