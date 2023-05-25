@@ -18,7 +18,7 @@ export default function AreaResponsavel() {
         <ImageBackground source={ require('../assets/images/area-responsavel-bg.png') } resizeMode='cover' style={{ flex:1, width:'100%', height: '100%' }}> 
             <Header title='VEJA SEUS PEQUENOS'/>
             <Container>
-                <View style={global.content}>
+                <View style={[global.content, { height: '90%', alignItems: 'center' }]}>
                     {criancas.map((crianca) => (
                         <Crianca key={crianca.id} nome={crianca.nome} img={crianca.img}/>
                     ))}

@@ -1,13 +1,14 @@
 import { Text, View } from "react-native";
 
-import global from "../styles/global";
 import header from "../styles/header";
 
 export default function Header (props:HeaderProps ){
-
     return (
-        <View style={header.container}>
-            <Text style={header.title}>{props.title}</Text>
+        <View style={props.children ? header.backContainer : header.container}>
+            {props.children}
+            <View style={{flex:1, justifyContent:'center'}}>
+                <Text style={header.title}>{props.title}</Text>
+            </View>
         </View>
     );
 }

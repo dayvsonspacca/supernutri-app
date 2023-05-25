@@ -1,4 +1,5 @@
 import { View, ImageBackground, TouchableOpacity, Text, TextInput, Image } from 'react-native'
+import Icon from 'react-native-vector-icons/AntDesign';
 
 import Container from '../components/Container';
 import Form from '../components/Form';
@@ -11,7 +12,11 @@ import form from '../styles/form';
 export default function CadastroPequeno() {
     return(
         <ImageBackground source={ require('../assets/images/criar-perfis-bg.png') } resizeMode='cover' style={{ flex:1, width:'100%', height: '100%' }}> 
-            <Header title='CADASTRE SEU PEQUENO'/>
+            <Header title='CADASTRE SEU PEQUENO'>
+                <TouchableOpacity style={{marginBottom: 20}}>
+                    <Icon name="arrowleft"  size={60} color='black' />
+                </TouchableOpacity>
+            </Header>
             <Container>
                 <Form size="100%">
                     <View style={[form.inputContainer, {marginTop: 30}]}>

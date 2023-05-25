@@ -5,7 +5,8 @@ interface FormProps {
 }
 
 interface HeaderProps {
-    title: String
+    title: String,
+    children?: React.ReactNode,
 }
 
 interface CriancaProps {

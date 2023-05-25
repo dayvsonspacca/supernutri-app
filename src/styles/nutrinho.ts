@@ -14,7 +14,9 @@ const nutrinhos = StyleSheet.create({
         backgroundColor: theme.colors.secondary,
         flexDirection: 'row',
         alignItems: 'center',
-        borderRadius: 25
+        borderRadius: 25,
+        padding: 10,
+        marginTop: 10
     },
     infoContainer: {
         flex:1

@@ -9,6 +9,6 @@ import Nutrinhos from "./src/screens/Nutrinhos";
 
 export default function App() {
   return (
-    <Nutrinhos></Nutrinhos>
+    <Jogos></Jogos>
   );
 }

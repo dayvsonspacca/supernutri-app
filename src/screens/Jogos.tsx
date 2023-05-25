@@ -1,4 +1,5 @@
-import { View, Text, ImageBackground, ScrollView } from "react-native";
+import { ImageBackground, ScrollView, TouchableOpacity } from "react-native";
+import Icon from 'react-native-vector-icons/AntDesign';
 
 import Container from '../components/Container';
 import Header from '../components/Header';
@@ -18,7 +19,11 @@ export default function Jogos() {
 
     return (
         <ImageBackground source={ require('../assets/images/jogos-bg.png') } resizeMode='cover' style={{ flex:1, width:'100%', height: '100%' }}> 
-            <Header title='Vamos jogar Enzo!'/>
+            <Header title='Vamos jogar Enzo!'>
+                <TouchableOpacity style={{marginBottom: 20, marginRight: 10}}>
+                    <Icon name="arrowleft"  size={60} color='black' />
+                </TouchableOpacity>
+            </Header>
             <Container>
                 <ScrollView style={jogos.jogosContainer} contentContainerStyle={{alignItems: 'center'}}>
                     {
