@@ -8,7 +8,7 @@ import Header from '../components/Header';
 import global from '../styles/global';
 import theme from '../styles/theme';
 
-export default function Nutrinhos() {
+export default function Nutrinhos({ navigation }) {
     
     const nutrinhos: Array<NutrinhoProps> = [
         { 
@@ -21,7 +21,7 @@ export default function Nutrinhos() {
     return(
         <ImageBackground source={ require('../assets/images/nutrinhos-bg.png') } resizeMode='cover' style={{ flex:1, width:'100%', height: '100%' }}> 
             <Header title='Conheça os Nutrinhos seus amiguinhos'>
-                <TouchableOpacity style={{marginBottom: 20}}>
+                <TouchableOpacity style={{marginBottom: 20}} onPress={() => navigation.navigate('AreaCriancas')}>
                     <Icon name="arrowleft"  size={60} color='black' />
                 </TouchableOpacity>
             </Header>

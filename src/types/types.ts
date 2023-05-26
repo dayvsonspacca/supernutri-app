@@ -11,7 +11,8 @@ interface HeaderProps {
 
 interface CriancaProps {
     nome: String,
-    img: String
+    img: String,
+    navigation: any
 }
 
 interface JogoProps {

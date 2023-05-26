@@ -7,7 +7,7 @@ import theme from "../styles/theme";
 import form from "../styles/form";
 import global from "../styles/global";
 
-export default function ForgotPassword() {
+export default function ForgotPassword({ navigation }) {
   return (
     <ImageBackground source={ require('../assets/images/forgot-password-bg.png') } resizeMode='cover' style={{ flex:1, width:'100%', height: '100%' }}> 
       <Container>
@@ -28,7 +28,7 @@ export default function ForgotPassword() {
             <Text style={{ fontSize: theme.font.md }}>Continuar</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity><Text style={[form.link, { marginTop: 10}]}>Cancelar</Text></TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('Login')}><Text style={[form.link, { marginTop: 10}]}>Cancelar</Text></TouchableOpacity>
 
         </Form>
       </Container>

@@ -7,7 +7,7 @@ import Jogo from "../components/Jogo";
 
 import jogos from "../styles/jogos";
 
-export default function Jogos() {
+export default function Jogos({ navigation }) {
 
     const jogosArr: Array<JogoProps> = [
         { nome: 'Pinte', bloqueado: false},
@@ -20,7 +20,7 @@ export default function Jogos() {
     return (
         <ImageBackground source={ require('../assets/images/jogos-bg.png') } resizeMode='cover' style={{ flex:1, width:'100%', height: '100%' }}> 
             <Header title='Vamos jogar Enzo!'>
-                <TouchableOpacity style={{marginBottom: 20, marginRight: 10}}>
+                <TouchableOpacity style={{marginBottom: 20, marginRight: 10}} onPress={() => navigation.navigate('AreaCriancas')}>
                     <Icon name="arrowleft"  size={60} color='black' />
                 </TouchableOpacity>
             </Header>

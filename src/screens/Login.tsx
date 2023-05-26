@@ -1,5 +1,6 @@
 import { TextInput } from "react-native";
 import { View, Text, TouchableOpacity, ImageBackground } from "react-native";
+import { NavigationProp } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/AntDesign';
 
 import Container from "../components/Container";
@@ -9,7 +10,7 @@ import theme from "../styles/theme";
 import form from "../styles/form";
 import global from "../styles/global";
 
-export default function Login() {
+export default function Login({navigation}) {
   return (
     <ImageBackground source={ require('../assets/images/login-bg.png') } resizeMode='cover' style={{ flex:1, width:'100%', height: '100%' }}> 
       <Container>
@@ -26,7 +27,7 @@ export default function Login() {
 
         <View style={global.line}></View>
 
-        <TouchableOpacity style={global.btn}>
+        <TouchableOpacity style={global.btn} onPress={() => navigation.navigate('AreaResponsavel')}>
           <Text style={{ fontSize: theme.font.md }}>Conectar</Text>
         </TouchableOpacity>
         <Text style={{ fontSize: theme.font.md, marginVertical: 5 }}>Ou entrar através</Text>
@@ -36,9 +37,9 @@ export default function Login() {
           <TouchableOpacity style={form.method}><Icon name="facebook-square" size={50} color='black' /></TouchableOpacity>
         </View>
 
-        <TouchableOpacity><Text style={form.link}>Esqueci minha senha</Text></TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('ForgotPassword')}><Text style={form.link}>Esqueci minha senha</Text></TouchableOpacity>
 
-        <Text style={{ fontSize: theme.font.smd, marginTop: 20}}>Não possui uma conta? <TouchableOpacity><Text style={form.link}>Cadastre-se</Text></TouchableOpacity></Text>
+        <Text style={{ fontSize: theme.font.smd, marginTop: 20}}>Não possui uma conta? <TouchableOpacity onPress={() => navigation.navigate('Register')}><Text style={form.link}>Cadastre-se</Text></TouchableOpacity></Text>
         </Form>
       </Container>
     </ImageBackground>

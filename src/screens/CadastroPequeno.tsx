@@ -9,11 +9,11 @@ import global from '../styles/global';
 import theme from '../styles/theme';
 import form from '../styles/form';
 
-export default function CadastroPequeno() {
+export default function CadastroPequeno({ navigation }) {
     return(
         <ImageBackground source={ require('../assets/images/criar-perfis-bg.png') } resizeMode='cover' style={{ flex:1, width:'100%', height: '100%' }}> 
             <Header title='CADASTRE SEU PEQUENO'>
-                <TouchableOpacity style={{marginBottom: 20}}>
+                <TouchableOpacity style={{marginBottom: 20}} onPress={() => navigation.navigate('AreaResponsavel')}>
                     <Icon name="arrowleft"  size={60} color='black' />
                 </TouchableOpacity>
             </Header>
