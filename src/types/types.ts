@@ -18,6 +18,7 @@ interface CriancaProps {
 interface JogoProps {
     nome: String,
     bloqueado: Boolean,
+    img: String
 }
 
 interface NutrinhoProps {

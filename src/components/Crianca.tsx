@@ -3,11 +3,20 @@ import { Text, View, Image, TouchableOpacity } from "react-native";
 import crianca from "../styles/crianca";
 import theme from "../styles/theme";
 
+import enzo from '../assets/images/enzo.png';
+import maria from '../assets/images/maria.png';
+
 export default function Crianca ( props:CriancaProps ){
+
+    const kidsImages = {
+        'enzo': enzo,
+        'maria': maria
+    }
+
     return (
         <View style={crianca.container}>
             <View style={crianca.imgContainer}>
-                <Image source={ require('../assets/images/enzo.png') } style={{width: 60, height: 60, backgroundColor: theme.colors.primary, marginLeft: 10, borderRadius: 50}} />
+                <Image source={ kidsImages[props.img] } style={{width: 60, height: 60, backgroundColor: theme.colors.primary, marginLeft: 10, borderRadius: 50}} />
             </View>
             <View style={crianca.actionsContainer}>
                 <View style={crianca.nameContianer}>

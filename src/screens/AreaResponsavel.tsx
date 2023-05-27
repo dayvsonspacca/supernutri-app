@@ -12,7 +12,7 @@ import theme from '../styles/theme';
 
 export default function AreaResponsavel({navigation}) {
 
-    const criancas = [{ id: 1, nome: 'Enzo Valentino', img: '../assets/images/enzo.png'}, { id: 2, nome: 'Maria Sofia', img: '../assets/images/maria.png'}];
+    const criancas = [{ id: 1, nome: 'Enzo Valentino', img: 'enzo'}, { id: 2, nome: 'Maria Sofia', img: 'maria'}];
 
     return(
         <ImageBackground source={ require('../assets/images/area-responsavel-bg.png') } resizeMode='cover' style={{ flex:1, width:'100%', height: '100%' }}> 

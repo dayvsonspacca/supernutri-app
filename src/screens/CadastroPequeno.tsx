@@ -47,8 +47,8 @@ export default function CadastroPequeno({ navigation }) {
                     <Text style={[form.link, { marginTop: 10 }]}>Por que pedimos esses dados?</Text>
 
                     <View style={{position: 'relative'}}>
-                        <Image source={require('../assets/images/bananoide.png')} style={{ position: 'relative', zIndex: 2, right: 100, bottom: 100}}/> 
-                        <Image source={require('../assets/images/laranjita.png')} style={{ position: 'relative', zIndex: 2, left: 100,  bottom: 100}}/> 
+                        <Image source={require('../assets/images/nutrinhos/bananoide.png')} style={{ position: 'relative', zIndex: 2, right: 100, bottom: 100}}/> 
+                        <Image source={require('../assets/images/nutrinhos/laranjita.png')} style={{ position: 'relative', zIndex: 2, left: 100,  bottom: 100}}/> 
                     </View>
                 </Form>
             </Container>

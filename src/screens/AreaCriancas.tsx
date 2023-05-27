@@ -1,4 +1,5 @@
 import { View, ImageBackground, TouchableOpacity, Text, Image } from 'react-native'
+import SvgUri from 'react-native-svg';
 
 import Container from '../components/Container';
 import Header from '../components/Header';
@@ -17,22 +18,32 @@ export default function AreaCriancas({ navigation }) {
                 <View style={[global.content, { alignItems: 'center', height: '90%' }]}>
 
                     <TouchableOpacity style={ crianca.btn } onPress={() => navigation.navigate('Jogos')}>
-                        <Text style={{fontSize: theme.font.md, fontWeight: 'bold'}}>JOGOS</Text>
+                        <ImageBackground source={ require('../assets/images/bg-jogos.png') } resizeMode='cover' style={{ flex:1, width:'100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}>
+                                <Text style={{fontSize: theme.font.md, fontWeight: 'bold'}}>JOGOS</Text>
+                        </ImageBackground>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={ crianca.btn } onPress={() => navigation.navigate('Customizar')}>
-                        <Text style={{fontSize: theme.font.md, fontWeight: 'bold'}}>CUSTOMIZAR</Text>
+                    <TouchableOpacity style={ crianca.btn } onPress={() => {}}>
+                        <ImageBackground source={ require('../assets/images/bg-customizar.png') } resizeMode='cover' style={{ width:'100%', height: '100%', justifyContent: 'center', alignItems: 'center'}}>
+                            <Text style={{fontSize: theme.font.md, fontWeight: 'bold'}}>CUSTOMIZAR</Text>
+                        </ImageBackground>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={ crianca.btn } onPress={() => navigation.navigate('Quiz')}>
-                        <Text style={{fontSize: theme.font.md, fontWeight: 'bold'}}>QUIZ</Text>
+                    <TouchableOpacity style={ crianca.btn } onPress={() => {}}>
+                        <ImageBackground source={ require('../assets/images/bg-quiz.png') } resizeMode='cover' style={{ width:'100%', height: '100%', justifyContent: 'center', alignItems: 'center'}}>
+                            <Text style={{fontSize: theme.font.md, fontWeight: 'bold'}}>QUIZ</Text>
+                        </ImageBackground>
                     </TouchableOpacity>
 
                     <TouchableOpacity style={ crianca.btn } onPress={() => navigation.navigate('Nutrinhos')}>
-                        <Text style={{fontSize: theme.font.md, fontWeight: 'bold'}}>NUTRINHOS</Text>
+                        <ImageBackground source={ require('../assets/images/bg-nutrinhos.png') } resizeMode='cover' style={{ width:'100%', height: '100%', justifyContent: 'center', alignItems: 'center'}}>
+                            <Text style={{fontSize: theme.font.md, fontWeight: 'bold'}}>NUTRINHOS</Text>
+                        </ImageBackground>
                     </TouchableOpacity>
-
-                    <View></View>
+                    
+                    <View style={{position: 'relative'}}>
+                        <Image source={require('../assets/images/nutrinhos/bananoide.png')}    style={{ position: 'relative', zIndex: 2, bottom: 0, right: '30%'}}/> 
+                    </View>
 
                 </View>
             </Container>
